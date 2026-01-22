@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Provider Login</title>
+  <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<button class="back-btn" onclick="history.back()">⬅</button>
+
+<div class="container">
+  <div class="card">
+    <h1>🔐 Provider Login</h1>
+    <p>Login to manage blood availability</p>
+
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+
+      <button class="btn">Login</button>
+    </form>
+<button class="btn-back-user" onclick="goToSearch()">
+  ← Back to Blood Search
+</button>
+
+
+    <div class="link">
+      New provider? <a href="provider-register.html">Register</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/provider-auth.js"></script>
+</body>
+</html>

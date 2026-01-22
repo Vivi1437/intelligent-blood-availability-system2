@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Availability</title>
+
+  <link rel="stylesheet" href="css/result.css" />
+</head>
+<body>
+
+  <div class="result-wrapper">
+    <div class="result-card">
+
+      <h1 class="title">📍 Blood Availability</h1>
+      <p class="subtitle" id="searchInfo">
+        Available blood units near you
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Hospital / Blood Bank</th>
+              <th>Blood Group</th>
+              <th>Units</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody id="resultBody">
+            <!-- JS inserts rows -->
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn-back" onclick="goBack()">
+        ← Back to Search
+      </button>
+
+    </div>
+  </div>
+
+  <script src="js/result.js"></script>
+</body>
+</html>

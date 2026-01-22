@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Blood</title>
+
+  <link rel="stylesheet" href="css/search.css" />
+</head>
+<body>
+
+  <div class="search-wrapper">
+    <div class="search-card">
+
+      <h1 class="title">
+        🔍 Search Blood
+      </h1>
+      <p class="subtitle">
+        Find available blood units near you
+      </p>
+
+      <form id="searchForm">
+
+        <input 
+          type="text" 
+          id="city"
+          placeholder="Enter City"
+          required
+        />
+
+        <select id="bloodGroup" required>
+          <option value="">Select Blood Group</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+
+        <button type="submit" class="btn-search">
+          Search Availability
+        </button>
+
+      </form>
+
+      <button class="btn-back" onclick="goHome()">
+        ← Back to Home
+      </button>
+
+    </div>
+  </div>
+
+  <script src="js/search.js"></script>
+</body>
+</html>

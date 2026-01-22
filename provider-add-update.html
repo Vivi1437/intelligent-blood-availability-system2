@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add / Update Blood</title>
+
+  <link rel="stylesheet" href="css/add-update.css" />
+</head>
+<body>
+
+  <div class="au-wrapper">
+    <div class="au-card">
+
+      <h1 class="title">➕ Add / Update Blood</h1>
+      <p class="subtitle">Manage blood stock for your hospital</p>
+
+      <form id="bloodForm">
+
+        <input type="text" id="hospital" placeholder="Hospital / Blood Bank Name" required />
+
+        <input type="text" id="city" placeholder="City" required />
+
+        <select id="bloodGroup" required>
+          <option value="">Select Blood Group</option>
+          <option>O+</option><option>O-</option>
+          <option>A+</option><option>A-</option>
+          <option>B+</option><option>B-</option>
+          <option>AB+</option><option>AB-</option>
+        </select>
+
+        <input type="number" id="units" min="1" placeholder="Available Units" required />
+
+        <button type="submit" class="btn-primary">
+          Save / Update
+        </button>
+
+      </form>
+
+      <div class="actions">
+        <button class="btn-link" onclick="goDashboard()">← Back to Dashboard</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/add-update.js"></script>
+</body>
+</html>

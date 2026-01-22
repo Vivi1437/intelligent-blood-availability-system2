@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Provider Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<button class="back-btn" onclick="history.back()">⬅</button>
+
+<div class="container">
+  <div class="card">
+    <h1>🏥 Provider Registration</h1>
+    <p>Create provider account</p>
+
+    <form id="registerForm">
+      <input type="text" id="regHospital" placeholder="Hospital / Blood Bank Name" required>
+      <input type="text" id="regCity" placeholder="City" required>
+      <input type="email" id="regEmail" placeholder="Email" required>
+      <input type="password" id="regPassword" placeholder="Password" required>
+
+      <button class="btn">Register</button>
+    </form>
+
+    <div class="link">
+      Already registered? <a href="provider-login.html">Login</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/provider-auth.js"></script>
+</body>
+</html>
