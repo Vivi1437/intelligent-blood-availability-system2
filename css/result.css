@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e6f4ff, #f9fdff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.result-card {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 22px 55px rgba(0, 140, 255, 0.18);
+}
+
+.title {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(135deg, #00aaff, #0077cc);
+  color: white;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e6f2ff;
+}
+
+tbody tr:nth-child(even) {
+  background: #f5fbff;
+}
+
+tbody tr:hover {
+  background: #eaf6ff;
+}
+
+.btn-back {
+  margin-top: 22px;
+  background: none;
+  border: none;
+  color: #0077cc;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  th, td {
+    font-size: 13px;
+    padding: 12px 8px;
+  }
+
+  .result-card {
+    padding: 25px 18px;
+  }
+}
