@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Provider Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+
+    <h1>🩸 Provider Dashboard</h1>
+    <p class="subtitle">Manage blood availability easily</p>
+
+    <div class="card-grid">
+
+      <div class="card" onclick="openProfile()">
+        <h2>My Profile</h2>
+        <p>View hospital details</p>
+      </div>
+
+      <div class="card" onclick="openAddUpdate()">
+        <h2>Add / Update</h2>
+        <p>Add or modify blood units</p>
+      </div>
+
+      <div class="card" onclick="openStock()">
+        <h2>View Stock</h2>
+        <p>Check available blood units</p>
+      </div>
+
+      <div class="card logout" onclick="logout()">
+        <h2>Logout</h2>
+        <p>Exit dashboard safely</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
